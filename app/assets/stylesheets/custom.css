@@ -1,0 +1,60 @@
+nav ul li {
+    list-style-type:none;
+    display:inline;
+    float:right;
+    margin-left:20px;
+}
+
+#logo {
+    float:left;
+}
+
+.container {
+    width:720px;
+
+}
+
+footer ul li {
+    list-style-type:none;
+    display:inline;
+    margin-left:20px;
+    float:left;
+}
+.span-18 {   
+    height:30px;
+}
+#buffer {
+    background-color:blue; 
+}
+#head {
+    font-size:30px;
+}
+.edit_user {
+    margin-left:10px;
+}
+h1 {
+    margin-left:10px;
+}
+ul li {
+    list-style-type:none;
+    text-align:center;
+}
+li h1 {
+    text-align:center;
+    font-size:24px;
+}
+li p {
+    text-align:center;
+}
+#notice {
+    color:green;
+}
+div img {
+    width:150px;
+    height:170px;
+}
+#error_explanation {
+    font-size:12px;
+    text-align:center;
+}
+

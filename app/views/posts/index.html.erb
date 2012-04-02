@@ -1,0 +1,14 @@
+<% @posts.reverse.each do |post| %>
+  <ul>
+    <li><h1><%= link_to post.title, post %></h1></li>
+    <li><p>Posted On: <%= post.created_at %></p></li>
+    <li><%= post.content %></li>
+    <li><%= link_to 'Edit', edit_post_path(post) %></li>
+    <li><%= link_to 'Delete', post, confirm: 'Are you sure?', method: :delete %></li>
+  </ul>
+<% end %>
+
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>

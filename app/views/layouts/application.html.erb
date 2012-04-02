@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+<!--[if it IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+<!--[if it IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+</head>
+<body>
+  <div class="container">
+  
+  <%= render 'layouts/header' %>
+
+  <br/>
+  <br/>
+  <br/>
+  <div class="span-18">
+  </div>
+  <br/>
+<%= yield %>
+  <%= render 'layouts/footer' %>
+  <%= debug(params) if Rails.env.development? %>
+</body>
+</html>
